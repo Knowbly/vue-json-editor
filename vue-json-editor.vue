@@ -37,6 +37,7 @@
             self.error = false
           } catch (e) {
             self.error = true
+            self.$emit('error',e)
           }
           if (!self.error) {
             self.json = json
